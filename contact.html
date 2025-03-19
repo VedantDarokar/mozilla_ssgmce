@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Icons  -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Favicon  -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+  <!-- Stylesheet Link  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./stylesheets/contact.css" />
+        <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "feSnYy1aSKVpyvI5S",
+            });
+        })();
+        </script>
+  <title>Mozilla-Contact</title>
+ 
+
+</head>
+<body>
+    
+<!--Header Section Start-->
+  <header class="header">
+    <div class="header-left">
+      <img src="./assets/Logo/SSGMCE-Vertical-Colour.png" alt="College Logo" class="logo-img1">
+      <img src="./assets/Logo/mozilla-logo2.png" alt="Committee Logo" class="logo-img2">
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+  
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html">About</a></li>
+        <li><a href="./index.html">Faculty</a></li>
+        <li><a href="./index.html">Testimonials</a></li>
+        <li><a href="./team.html">Team</a></li>
+        <li><a href="./index.html">Events</a></li>
+        <li><a href="./gallary.html">Gallery</a></li>
+        <li><a href="./contact.html ">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+<!--Contact Section Start-->
+
+    <div class="contact-overlay flexbox" >
+        <div class="contact-content">
+            <h1 class="form-heading">Contact Us</h1>
+            <h1 class="form-info">If You Have Any Query, Please Contact Us</h1>
+            
+            <div class="contact-row">
+                <!-- Google Map -->
+                <div class="contact-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.2671154093587!2d76.67379921590083!3d20.780478763745705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd7457296aaba57%3A0xa9f05c70098ee6c7!2sShri%20Sant%20Gajanan%20Maharaj%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1680666196862!5m2!1sen!2sin"
+                        allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-right">
+                    <form>
+                        <div class="form-floating">
+                            <label class="lable" for="name">Your Name :</label>
+                            <input type="text" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-floating">
+                            <label for="email">Your Email :</label>
+                            <input type="email" id="email" placeholder="Your Email">  
+                        </div>
+                        <div class="form-floating">
+                            <label for="subject">Subject :</label>
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-floating">
+                            <label for="message">Message :</label>
+                            <textarea id="message" placeholder="Leave a message"></textarea>
+                        </div>
+                        <button type="submit" onclick="sendMail(event)">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Contact Section End-->
+
+
+<!-- Footer Section Start -->
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section contact">
+            <h2>SSGMCE</h2>
+            <p><i class="fas fa-map-marker-alt"></i> SSGMCE, Khamgaon Road, Post 
+              Shegaon, Maharashtra 444203</p>
+            <br>
+            <p><i class="fas fa-envelope"></i> Email : mozilla.ssgmce.it@gmail.com</p>
+        </div>
+
+        <div class="footer-section links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./index.html">Faculty</a></li>
+                <li><a href="./index.html">Testimonials</a></li>
+                <li><a href="./team.html">Team</a></li>
+                <li><a href="./index.html">Events</a></li>
+                <li><a href="./gallary.html">Gallery</a></li>
+                <li><a href="./contact.html ">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section scopes">
+            <h2>Our Scopes</h2>
+            <ul>
+                <li><a href="#">Open Scource Contributions
+                </a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Knowledgeable Workshops</a></li>
+                <li><a href="#">Overall Development of Students</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section social">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <a href="https://community.mozilla.org/en/" target="_blank"><i id="social_media"class="fa-solid fa-link"></i></a>
+                <a href="https://www.instagram.com/mozillassgmce?igsh=MWoxMXB5bmV5cWVmYQ=="><i id="social_media"class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/mozilla-open-source-community-ssgmce/"><i id="social_media"class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</footer>
+
+<div class="footer-bottom"flexbox justify-content-center>
+  <div><p>© <span class="highlight">Mozilla SSGMCE</span>, All Rights Reserved.</p></div>
+  <div><p>Designed by <a href="https://www.linkedin.com/in/vedant-darokar-3241a3286/" target="_blank" style="text-decoration: none;"><span class="highlight">Vedant Darokar</span></a></p></div>
+  <br>
+</div>
+
+ <!-- Footer Section Ends-->   
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>
