@@ -789,8 +789,8 @@ ul li a:hover {
 .social-icons a {
   display: inline-block;
   margin-right: 10px;
-  color: white;
-  font-size: 20px;
+  color: #432900;
+  font-size: 30px;
   transition: 0.3s;
 }
 
