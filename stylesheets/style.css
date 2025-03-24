@@ -245,6 +245,21 @@ section {
   width: 100%;
 }
 
+.team-banner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between the banner and team section */
+}
+
+.team-banner-img {
+  height: 400px;
+  object-fit: cover; /* Ensures the image scales properly */
+  border-radius: 15px;
+}
+
+.team-banner-img:hover {
+  box-shadow: 0 0 10px rgb(252, 162, 17);
+}
 .team-card {
   width: 100%;
   max-width: 350px; /* Ensure all cards have the same width */
@@ -263,6 +278,12 @@ section {
   
   .team-container .team-card:nth-child(1) {
     grid-column: span 2; /* First card spans full width */
+  }
+}
+@media (max-width: 768px) { 
+  .team-banner-img {
+      width: 90vw; /* Makes the image take 90% of the screen width */
+      height: 170px;
   }
 }
 
